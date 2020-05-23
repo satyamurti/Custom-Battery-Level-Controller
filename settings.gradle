@@ -1,0 +1,2 @@
+rootProject.name='CustomBatteryLevelController'
+include ':app'
