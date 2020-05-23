@@ -11,10 +11,11 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
-        android:textColor="@android:color/holo_green_light"
-        android:textSize="35sp"
         android:layout_marginTop="40dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +36,7 @@
         android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="88dp"
         android:background="#0000"
         android:checked="false"
         android:text="ToggleButton"
@@ -45,14 +46,15 @@
         android:textSize="25sp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="378dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="24dp"
         android:background="@color/color1"
         android:onClick="ON"
         android:text="ON"
@@ -60,14 +62,15 @@
         android:textSize="25sp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="378dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="24dp"
         android:background="@color/color1"
         android:onClick="OFF"
         android:text="OFF"
@@ -75,46 +78,48 @@
         android:textSize="25sp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="265dp"
         android:layout_height="54dp"
-        android:layout_marginTop="180dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="192dp"
+        android:fontFamily="@font/comfortaa_bold"
         android:text="Slide To Change Alarm Level"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.63" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="378dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:background="#0000"
-        android:text="Exit"
         android:onClick="Exit"
+        android:text="Exit"
         android:textColor="@color/R"
         android:textSize="25sp"
         android:visibility="invisible"
-        android:layout_marginTop="450dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="231dp"
         android:layout_height="204dp"
-        android:layout_marginTop="120dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/power" />
 
 
